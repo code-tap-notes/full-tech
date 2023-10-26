@@ -1,0 +1,25 @@
+Dùng google translate 
+Theo link : https://github.com/statickidz/php-google-translate-free 
+Youtube: https://www.youtube.com/watch?v=gfdak8YHjiU&ab_channel=Computerjulian
+
+1.	CÀi 
+$ composer require statickidz/php-google-translate-free 
+
+2.	Chép đoạn code ví dụ
+require_once ('vendor/autoload.php');
+use \Statickidz\GoogleTranslate;
+
+$source = 'es';
+$target = 'en';
+$text = 'buenos días';
+
+$trans = new GoogleTranslate();
+$result = $trans->translate($source, $target, $text);
+
+// Good morning
+echo $result;
+
+3.	Run
+Link mở rộng hơn cài    $ composer require google/cloud-translate
+https://github.com/googleapis/google-cloud-php-translate?fbclid=IwAR0FadcHS2dq9WVR_T8O0XJmenD3C85XGzIWgyxXK07qfYXnZUEOkVYJkkY
+
